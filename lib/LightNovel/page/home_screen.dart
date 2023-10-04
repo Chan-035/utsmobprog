@@ -38,7 +38,7 @@ class HomeScreen extends StatelessWidget {
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(20),
                       child: Image.asset(
-                        'assets/images/1.jpg',
+                        'assets/images/ReZero1.jpg',
                         fit: BoxFit.cover,
                       ),
                     ),
@@ -62,7 +62,7 @@ class HomeScreen extends StatelessWidget {
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(20),
                       child: Image.asset(
-                        'assets/images/B.jpg',
+                        'assets/images/mushoku1.jpg',
                         fit: BoxFit.cover,
                       ),
                     ),

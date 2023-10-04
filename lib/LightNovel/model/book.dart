@@ -30,11 +30,11 @@ class BookDetail {
   static List<BookDetail> listbooks = [
     BookDetail(
       id: '1',
-      text: "Maria:or,The Wrongs of Woman",
-      authors: 'Albert Einstein',
+      text: "Re: Zero Kara Hajimeru Isekai Seikatsu",
+      authors: 'Nagatsuki Tappei',
       description:
       'When Hans died, he left Ariana a small box filled with letters, diary entries, and other memorabilia. Ten years later Ariana finally summoned the courage to have the letters translated, and she began reading. What she discovered launched her on a worldwide search that would deliver indelible portraits of a family loving, finding meaning, and trying to survive amid the worst that can be imagined.',
-      image: '1.jpg',
+      image: 'ReZero1.jpg',
     ),
     BookDetail(
       id: '2',
@@ -42,7 +42,7 @@ class BookDetail {
       authors: 'Mark Twain',
       description:
       'A person who won’t read has no advantage over one who can’t read.',
-      image: 'B.jpg',
+      image: 'mushoku1.jpg',
     ),
     BookDetail(
       id: '3',
