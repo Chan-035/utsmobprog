@@ -20,19 +20,43 @@ class _VisualnovelPageState extends State<VisualnovelPage> {
         child: Column(
           children: <Widget>[
             VisualNovelEntry(
-              title: 'Judul Visual Novel 1',
-              rating: 'Rating: 4.5/5',
-              studio: 'Studio: Studio A',
-              genre: 'Genre: Drama, Romance',
+              title: 'Grisaia no Kajitsu -LE FRUIT DE LA GRISAIA-',
+              rating: 'Rating: 8.38/10',
+              studio: 'Developer: FrontWing',
+              genre: 'Slice of Life, Romance, Comedy',
               imagePath: 'assets/vn3.jpg',
               destinationPage: Vn1Page(), // Ganti dengan halaman yang sesuai
             ),
             VisualNovelEntry(
-              title: 'Judul Visual Novel 2',
-              rating: 'Rating: 4.0/5',
-              studio: 'Studio: Studio B',
-              genre: 'Genre: Fantasy, Adventure',
+              title: 'Fate/stay night',
+              rating: 'Rating: 8.61/10',
+              studio: 'Developer: TYPE-MOON',
+              genre: 'Action, Fantasy, Romance, Supernatural',
               imagePath: 'assets/vn2.jpg',
+              destinationPage: Vn2Page(), // Ganti dengan halaman yang sesuai
+            ),
+            VisualNovelEntry(
+              title: 'Summer Pocket',
+              rating: '8.48/10',
+              studio: 'Developer: KEY',
+              genre: 'Slice of Life, Romance, Supernatural',
+              imagePath: 'assets/vn1.jpg',
+              destinationPage: Vn2Page(), // Ganti dengan halaman yang sesuai
+            ),
+            VisualNovelEntry(
+              title: 'G-senjou no Maou',
+              rating: '8.29/10',
+              studio: 'Developer: AKABEISOFT2',
+              genre: 'Action, Mystery, Romance',
+              imagePath: 'assets/vn4.jpg',
+              destinationPage: Vn2Page(), // Ganti dengan halaman yang sesuai
+            ),
+            VisualNovelEntry(
+              title: 'Sengoku Rance',
+              rating: '8.34/10',
+              studio: 'Developer: Alice Soft',
+              genre: 'Strategy, Eroge, Action',
+              imagePath: 'assets/vn5.jpg',
               destinationPage: Vn2Page(), // Ganti dengan halaman yang sesuai
             ),
             // Tambahkan lebih banyak entri visual novel di sini
