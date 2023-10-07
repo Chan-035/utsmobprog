@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class Vn2Page extends StatelessWidget {
+class Vn4Page extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Fate/stay night'),
+        title: Text('G-Senjou no Maou'),
       ),
       body: SingleChildScrollView(
         padding: EdgeInsets.all(16),
@@ -15,7 +15,7 @@ class Vn2Page extends StatelessWidget {
             Row(
               children: <Widget>[
                 Image.asset(
-                  'assets/vn2.jpg',
+                  'assets/vn4.jpg',
                   width: 200,
                   height: 200,
                   fit: BoxFit.cover,
@@ -26,19 +26,19 @@ class Vn2Page extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       Text(
-                        'フェイト／ステイナイト',
+                        'G線上の魔王',
                         style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                       ),
                       Text(
-                        'Rating: 8.61/10',
+                        'Rating: 8.29/10',
                         style: TextStyle(fontSize: 18),
                       ),
                       Text(
-                        'TYPE-MOON',
+                        'AKABEISOFT2',
                         style: TextStyle(fontSize: 18),
                       ),
                       Text(
-                        'Action, Fantasy, Romance, Supernatural',
+                        'Action, Mystery, Romance, Drama',
                         style: TextStyle(fontSize: 18),
                       ),
                     ],
@@ -52,13 +52,7 @@ class Vn2Page extends StatelessWidget {
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
             Text(
-                '----The one who obtains the Holy Grail will have any wish come true.\n\n'
-
-            'The Holy Grail War. A great ritual that materializes the greatest holy artifact, the Holy Grail. There are two conditions to participate in this ritual: being a magus and being a "Master" chosen by the Holy Grail.\n\n'
-
-            'There are seven chosen Masters and seven classes of Servants, beings akin to superhumans with incredible fighting abilities. There is only one Holy Grail. If you wish for a miracle, prove that you are the strongest with your powers.\n\n'
-
-            'Emiya Shirou is a high school student who has learned rudimentary magic from his father and uses it to fix objects. He finds himself engaged in the Holy Grail war as he gets attacked by a Servant. As he gets cornered, he somehow summons his Servant and manages to stay alive long enough to compete against the other Masters.',
+              'You play the role of Azai Kyousuke, the son of a legendary gangster infamous in the underworld. You spend your time listening to Bach, playing God at school and covertly working for your stepfather, a ruthless financial heavyweight. This idyllic existence is broken when two individuals appear in the city - a beautiful girl named Usami Haru with hair you could get lost in for days, and a powerful international gangster known only as "Maou". Almost without delay, the two begin a deadly cat-and-mouse game, bringing you and your friends into the crossfire. Plotting, political intrigue and layer upon layer of interlocking traps are the weapons in this epic battle of wits.',
               style: TextStyle(fontSize: 18),
             ),
             SizedBox(height: 16),
@@ -71,7 +65,7 @@ class Vn2Page extends StatelessWidget {
             Row(
               children: <Widget>[
                 Image.asset(
-                  'vn2asset/emiya.jpg',
+                  'vn4asset/azai.jpg',
                   width: 100,
                   height: 130,
                   fit: BoxFit.cover,
@@ -82,11 +76,11 @@ class Vn2Page extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       Text(
-                        'Name            : Emiya Shirou',
+                        'Name            : Azai Kyousuke',
                         style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                       ),
                       Text(
-                        'Voiced by     : Sugiyama Noriaki',
+                        'Voiced by     : -',
                         style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                       ),
                     ],
@@ -99,7 +93,7 @@ class Vn2Page extends StatelessWidget {
             Row(
               children: <Widget>[
                 Image.asset(
-                  'vn2asset/archer.jpg',
+                  'vn4asset/eiichi.jpg',
                   width: 100,
                   height: 130,
                   fit: BoxFit.cover,
@@ -110,11 +104,11 @@ class Vn2Page extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       Text(
-                        'Name            : Archer',
+                        'Name            : Aizawa Eiichi',
                         style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                       ),
                       Text(
-                        'Voiced by     : Suwabe Junichi',
+                        'Voiced by     : Kaneda Mahiru',
                         style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                       ),
                     ],
@@ -127,7 +121,7 @@ class Vn2Page extends StatelessWidget {
             Row(
               children: <Widget>[
                 Image.asset(
-                  'vn2asset/illya.jpg',
+                  'vn4asset/kanon.jpg',
                   width: 100,
                   height: 130,
                   fit: BoxFit.cover,
@@ -138,11 +132,11 @@ class Vn2Page extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       Text(
-                        'Name            : Illyasviel von Einzbern',
-                        style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+                        'Name            : Azai Kanon',
+                        style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                       ),
                       Text(
-                        'Voiced by     : Kadowaki Mai ',
+                        'Voiced by     : Kawai Haruka',
                         style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                       ),
                     ],
@@ -155,7 +149,7 @@ class Vn2Page extends StatelessWidget {
             Row(
               children: <Widget>[
                 Image.asset(
-                  'vn2asset/kirei.jpg',
+                  'vn4asset/maou.jpg',
                   width: 100,
                   height: 130,
                   fit: BoxFit.cover,
@@ -166,11 +160,11 @@ class Vn2Page extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       Text(
-                        'Name            : Kotomine Kirei',
+                        'Name            : Maou',
                         style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                       ),
                       Text(
-                        'Voiced by     : Nakata Jouji',
+                        'Voiced by     :	Houdentei Rappa',
                         style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                       ),
                     ],
@@ -183,7 +177,7 @@ class Vn2Page extends StatelessWidget {
             Row(
               children: <Widget>[
                 Image.asset(
-                  'vn2asset/sakura.jpg',
+                  'vn4asset/tsubaki.jpg',
                   width: 100,
                   height: 130,
                   fit: BoxFit.cover,
@@ -194,11 +188,11 @@ class Vn2Page extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       Text(
-                        'Name            : Matou Sakura',
+                        'Name            : Miwa Tsubaki',
                         style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                       ),
                       Text(
-                        'Voiced by     : Shitaya Noriko',
+                        'Voiced by     :	Murasakibana Sumire',
                         style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                       ),
                     ],
@@ -211,7 +205,7 @@ class Vn2Page extends StatelessWidget {
             Row(
               children: <Widget>[
                 Image.asset(
-                  'vn2asset/saber.jpg',
+                  'vn4asset/mizuha.jpg',
                   width: 100,
                   height: 130,
                   fit: BoxFit.cover,
@@ -222,11 +216,11 @@ class Vn2Page extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       Text(
-                        'Name            : Saber',
+                        'Name            : Shiratori Mizuha',
                         style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                       ),
                       Text(
-                        'Voiced by     : Kawasumi Ayako',
+                        'Voiced by     :	Kaibara Elena',
                         style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                       ),
                     ],
@@ -239,7 +233,7 @@ class Vn2Page extends StatelessWidget {
             Row(
               children: <Widget>[
                 Image.asset(
-                  'vn2asset/rin.jpg',
+                  'vn4asset/haru.jpg',
                   width: 100,
                   height: 130,
                   fit: BoxFit.cover,
@@ -250,11 +244,11 @@ class Vn2Page extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       Text(
-                        'Name            : Tohsaka Rin',
+                        '(Best Girl)\nName            : Usami Haru',
                         style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                       ),
                       Text(
-                        'Voiced by     : Ueda Kana',
+                        'Voiced by     :	Kawashima Rino',
                         style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                       ),
                     ],
@@ -262,6 +256,7 @@ class Vn2Page extends StatelessWidget {
                 ),
               ],
             ),
+
             // nambah disini
           ],
         ),

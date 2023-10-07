@@ -62,17 +62,18 @@ class Vn1Page extends StatelessWidget {
               style: TextStyle(fontSize: 18),
             ),
             SizedBox(height: 16),
-            // Informasi karakter VN1
             Text(
               'Main Character List',
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
+
+            //Char 1
             Row(
               children: <Widget>[
                 Image.asset(
                   'vn1asset/char1.jpg', // Ganti dengan path gambar karakter VN1 yang benar
-                  width: 80,
-                  height: 80,
+                  width: 100,
+                  height: 100,
                   fit: BoxFit.cover,
                 ),
                 SizedBox(width: 16),
@@ -88,22 +89,19 @@ class Vn1Page extends StatelessWidget {
                         'Voiced by     : -',
                         style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                       ),
-                      Text(
-                        'The protagonist of the first Grisaia series. Tired of his life, he wanted to live a normal school life. Cool, philosophical, and minimalist, Yuuji is a realist, he always plans and scouts before action. Other than his occasional orthodontic military methods, he’s just a fit young man. He disguised himself as "exchange student from Canada".',
-                        style: TextStyle(fontSize: 18),
-                      ),
                     ],
                   ),
                 ),
               ],
             ),
+//char2
             SizedBox(height: 16),
             Row(
               children: <Widget>[
                 Image.asset(
                   'vn1asset/makina.jpg', // Ganti dengan path gambar karakter lainnya yang benar
-                  width: 80,
-                  height: 80,
+                  width: 100,
+                  height: 100,
                   fit: BoxFit.cover,
                 ),
                 SizedBox(width: 16),
@@ -119,16 +117,96 @@ class Vn1Page extends StatelessWidget {
                         'Voiced by     : Tamiyasu Tomoe',
                         style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                       ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+//char3
+            SizedBox(height: 16),
+            Row(
+              children: <Widget>[
+                Image.asset(
+                  'vn1asset/michiru.jpg', // Ganti dengan path gambar karakter lainnya yang benar
+                  width: 100,
+                  height: 100,
+                  fit: BoxFit.cover,
+                ),
+                SizedBox(width: 16),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
                       Text(
-                        'A first-year student of Mihama Academy, Makina is an innocent and carefree girl. For some unexplainable reasons, it’s hard to understand her personality. In general, she can be explained in one word, “Fool”, but sometimes her speech and behavior can make people shed cold sweat.',
-                        style: TextStyle(fontSize: 18),
+                        'Name            : Matsushima Michiru',
+                        style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                      ),
+                      Text(
+                        'Voiced by     : Hani Urara',
+                        style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                       ),
                     ],
                   ),
                 ),
               ],
             ),
-            // Anda dapat menambahkan karakter lainnya dengan mengulangi blok informasi karakter di sini
+//char4
+            SizedBox(height: 16),
+            Row(
+              children: <Widget>[
+                Image.asset(
+                  'vn1asset/yumiko.jpg',
+                  width: 100,
+                  height: 100,
+                  fit: BoxFit.cover,
+                ),
+                SizedBox(width: 16),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      Text(
+                        'Name            : Sakaki Yumiko',
+                        style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                      ),
+                      Text(
+                        'Voiced by     : Isshiki Hikaru',
+                        style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+//char5
+            SizedBox(height: 16),
+            Row(
+              children: <Widget>[
+                Image.asset(
+                  'vn1asset/amane.jpg',
+                  width: 100,
+                  height: 100,
+                  fit: BoxFit.cover,
+                ),
+                SizedBox(width: 16),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      Text(
+                        'Name            : Suou Amane',
+                        style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                      ),
+                      Text(
+                        'Voiced by     : Yukimi Sora ',
+                        style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+            // kalo mo nambah disini
           ],
         ),
       ),

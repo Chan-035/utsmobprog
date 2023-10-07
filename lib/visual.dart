@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
-import 'vn1.dart'; // Import file vn1.dart
-import 'vn2.dart'; // Import file vn2.dart
+import 'vn1.dart';
+import 'vn2.dart';
+import 'vn3.dart';
+import 'vn4.dart';
+import 'vn5.dart';
 
 class VisualnovelPage extends StatefulWidget {
   const VisualnovelPage({Key? key}) : super(key: key);
@@ -25,7 +28,7 @@ class _VisualnovelPageState extends State<VisualnovelPage> {
               studio: 'Developer: FrontWing',
               genre: 'Slice of Life, Romance, Comedy',
               imagePath: 'assets/vn3.jpg',
-              destinationPage: Vn1Page(), // Ganti dengan halaman yang sesuai
+              destinationPage: Vn1Page(),
             ),
             VisualNovelEntry(
               title: 'Fate/stay night',
@@ -33,7 +36,7 @@ class _VisualnovelPageState extends State<VisualnovelPage> {
               studio: 'Developer: TYPE-MOON',
               genre: 'Action, Fantasy, Romance, Supernatural',
               imagePath: 'assets/vn2.jpg',
-              destinationPage: Vn2Page(), // Ganti dengan halaman yang sesuai
+              destinationPage: Vn2Page(),
             ),
             VisualNovelEntry(
               title: 'Summer Pocket',
@@ -41,7 +44,7 @@ class _VisualnovelPageState extends State<VisualnovelPage> {
               studio: 'Developer: KEY',
               genre: 'Slice of Life, Romance, Supernatural',
               imagePath: 'assets/vn1.jpg',
-              destinationPage: Vn2Page(), // Ganti dengan halaman yang sesuai
+              destinationPage: Vn3Page(),
             ),
             VisualNovelEntry(
               title: 'G-senjou no Maou',
@@ -49,17 +52,17 @@ class _VisualnovelPageState extends State<VisualnovelPage> {
               studio: 'Developer: AKABEISOFT2',
               genre: 'Action, Mystery, Romance',
               imagePath: 'assets/vn4.jpg',
-              destinationPage: Vn2Page(), // Ganti dengan halaman yang sesuai
+              destinationPage: Vn4Page(),
             ),
             VisualNovelEntry(
-              title: 'Sengoku Rance',
-              rating: '8.34/10',
+              title: 'Rance 01 - Hikari o Motomete -',
+              rating: '7.13/10',
               studio: 'Developer: Alice Soft',
-              genre: 'Strategy, Eroge, Action',
+              genre: 'RPG, Eroge, Action',
               imagePath: 'assets/vn5.jpg',
-              destinationPage: Vn2Page(), // Ganti dengan halaman yang sesuai
+              destinationPage: Vn5Page(),
             ),
-            // Tambahkan lebih banyak entri visual novel di sini
+            //tambah sini we
           ],
         ),
       ),

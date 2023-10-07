@@ -62,8 +62,11 @@ flutter:
   assets:
      - assets/images/
      - assets/
-     - vn1asset/char1.jpg
-     - vn1asset/makina.jpg
+     - vn1asset/
+     - vn2asset/
+     - vn3asset/
+     - vn4asset/
+     - vn5asset/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
