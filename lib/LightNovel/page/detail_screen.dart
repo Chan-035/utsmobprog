@@ -50,6 +50,7 @@ class _Detail_screenState extends State<Detailscreen> {
         ),
         body: Container(
           padding: const EdgeInsets.only(left: 20),
+          child: SingleChildScrollView(
           child: Column(
             children: [
               BookDescriptionDetail(
@@ -59,6 +60,6 @@ class _Detail_screenState extends State<Detailscreen> {
                   image: detail.image)
             ],
           ),
-        ));
+        )));
   }
 }

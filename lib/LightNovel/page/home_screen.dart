@@ -86,7 +86,7 @@ class HomeScreen extends StatelessWidget {
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(20),
                       child: Image.asset(
-                        'assets/images/C.jpg',
+                        'assets/images/RebuildWorld1.jpg',
                         fit: BoxFit.cover,
                       ),
                     ),
@@ -110,7 +110,7 @@ class HomeScreen extends StatelessWidget {
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(20),
                       child: Image.asset(
-                        'assets/images/OIP.jpg',
+                        'assets/images/youzitsu1.jpg',
                         fit: BoxFit.cover,
                       ),
                     ),
@@ -134,7 +134,7 @@ class HomeScreen extends StatelessWidget {
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(20),
                       child: Image.asset(
-                        'assets/images/R.jpg',
+                        'assets/images/Grimgar1.jpg',
                         fit: BoxFit.cover,
                       ),
                     ),
@@ -225,11 +225,11 @@ class DetalHomePage {}
 class Categories {}
 
 List categories = [
-  "Short stories",
+  "Psychological",
   "Action & adventure",
-  "Poet",
-  "Scient Fiction",
-  "Rumor",
+  "Romance",
+  "Sci-fi",
+  "Comedy",
 ];
 
 class RecentUpdate extends StatelessWidget {

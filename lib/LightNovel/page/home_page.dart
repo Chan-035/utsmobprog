@@ -28,7 +28,7 @@ class _LNPageState extends State<LNPage> {
       appBar: AppBar(
         title: const Center(
           child: Text(
-            'Lê Huy Ebook',
+            'Light Novels',
             style:
             TextStyle(fontFamily: 'Poppins', fontWeight: FontWeight.bold),
           ),

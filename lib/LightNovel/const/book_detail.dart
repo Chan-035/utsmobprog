@@ -90,7 +90,7 @@ class BookDescriptionDetail extends StatelessWidget {
                                     ),
                                     child: const Center(
                                       child: Text(
-                                        'Fiction',
+                                        'Action',
                                         style: TextStyle(
                                             fontFamily: 'Poppins',
                                             color: Colors.blueAccent),
@@ -108,7 +108,7 @@ class BookDescriptionDetail extends StatelessWidget {
                                     ),
                                     child: const Center(
                                       child: Text(
-                                        'Literary',
+                                        'Romance',
                                         style: TextStyle(
                                             fontFamily: 'Poppins',
                                             color: Colors.blueAccent),
