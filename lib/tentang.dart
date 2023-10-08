@@ -40,7 +40,7 @@ class _AboutMeState extends State<AboutMePage> {
       );
       name = 'Edvandro Juliano'; // Ganti dengan nama admin 3
       description = '825210029'; // Ganti dengan deskripsi admin 3
-      profileImage = 'assets/noimg2.png'; // Ganti dengan gambar profil admin 3
+      profileImage = 'assets/mushs.gif'; // Ganti dengan gambar profil admin 3
     } else {
       return Container(); // Kosongkan kontainer jika tidak ada yang dipilih
     }
