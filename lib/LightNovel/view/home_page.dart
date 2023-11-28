@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:uts/LightNovel/page/home_screen.dart';
+import 'package:uts/LightNovel/view/home_screen.dart';
 
 class LNPage extends StatefulWidget {
   const LNPage({

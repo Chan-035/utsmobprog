@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'vn1.dart';
-import 'vn2.dart';
-import 'vn3.dart';
-import 'vn4.dart';
-import 'vn5.dart';
+import 'VisualNovel/Views/vn1.dart';
+import 'VisualNovel/Views/vn2.dart';
+import 'VisualNovel/Views/vn3.dart';
+import 'VisualNovel/Views/vn4.dart';
+import 'VisualNovel/Views/vn5.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 class VisualnovelPage extends StatefulWidget {
   const VisualnovelPage({Key? key}) : super(key: key);
@@ -18,6 +19,20 @@ class _VisualnovelPageState extends State<VisualnovelPage> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Visual Novel'),
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: () {
+            FirebaseAuth.instance.signOut();
+          },
+        ),
+        actions: [
+          IconButton(
+            icon: Icon(Icons.add),
+            onPressed: () {
+              showAddVisualNovelSnackbar(context);
+            },
+          ),
+        ],
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -62,13 +77,28 @@ class _VisualnovelPageState extends State<VisualnovelPage> {
               imagePath: 'assets/vn5.jpg',
               destinationPage: Vn5Page(),
             ),
-            //tambah sini we
           ],
         ),
       ),
     );
   }
+
+  void showAddVisualNovelSnackbar(BuildContext context) {
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: Text('Aplikasi Tidak Terhubung Ke Internet'),
+        duration: Duration(seconds: 3),
+        action: SnackBarAction(
+          label: 'OK',
+          onPressed: () {
+            // Do something when the user presses the action button
+          },
+        ),
+      ),
+    );
+  }
 }
+
 
 class VisualNovelEntry extends StatelessWidget {
   final String title;

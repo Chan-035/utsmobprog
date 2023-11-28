@@ -1,67 +1,194 @@
 import 'package:flutter/material.dart';
-import 'package:uts/LoginPage/signup.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:uts/main.dart';
 
-class Login extends StatelessWidget {
+class LoginPage extends StatefulWidget{
+  final VoidCallback showRegisterPage;
+  const LoginPage({Key? key, required this.showRegisterPage}) : super(key: key);
+
   @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('LOGIN'),
-      ),
-      body: Container(
-        height: double.infinity,
-        width:  double.infinity,
-        decoration: BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage('assets/Image1.png'),
-            fit: BoxFit.cover,
-          ),
+  State<LoginPage> createState() => _LoginPageState();
+}
+
+class _LoginPageState extends State<LoginPage>{
+  final _emailController = TextEditingController();
+  final _passwordController = TextEditingController();
+
+  @override
+  void dispose(){
+    _emailController.dispose();
+    _passwordController.dispose();
+    super.dispose();
+  }
+
+  Future<void> signIn() async {
+    try {
+      await FirebaseAuth.instance.signInWithEmailAndPassword(
+        email: _emailController.text.trim(),
+        password: _passwordController.text.trim(),
+      );
+    } catch (e) {
+      // Show a SnackBar with an error message when sign-in fails
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text('Sign-in failed. Please check your email and password.'),
+          duration: Duration(seconds: 3),
         ),
+      );
+    }
+  }
+
+
+
+  @override
+  Widget build(BuildContext context){
+    return Scaffold(
+      backgroundColor: Colors.grey[300],
+      body: SafeArea(
         child: Center(
-          child: Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                TextField(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              //hello
+              Text(
+                'Welcome',
+                style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 24
+                ),
+              ),
+              SizedBox(height: 10),
+              Text(
+                'Non Playable Character',
+                style: TextStyle(
+                    fontSize: 20
+                ),
+              ),
+              SizedBox(height: 50),
+
+              //email
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 25.0),
+                child: TextField(
+                  controller: _emailController,
                   decoration: InputDecoration(
-                    border: InputBorder.none,
-                    labelText: 'Username',
-                    hintText: 'Your Username',
+                    enabledBorder: OutlineInputBorder(
+                        borderSide: BorderSide(color: Colors.white),
+                        borderRadius: BorderRadius.circular(12)
+                    ),
+                    focusedBorder: OutlineInputBorder(
+                      borderSide: BorderSide(color: Colors.deepPurple),
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    hintText: 'Input Email',
+                    fillColor: Colors.grey[200],
+                    filled: true
                   ),
                 ),
-                SizedBox(height: 16.0),
-                TextField(
+              ),
+
+              SizedBox(height: 10),
+
+              //password
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 25.0),
+                child: TextField(
                   obscureText: true,
+                  controller: _passwordController,
                   decoration: InputDecoration(
-                    labelText: 'Password',
+                      enabledBorder: OutlineInputBorder(
+                          borderSide: BorderSide(color: Colors.white),
+                          borderRadius: BorderRadius.circular(12)
+                      ),
+                      focusedBorder: OutlineInputBorder(
+                        borderSide: BorderSide(color: Colors.deepPurple),
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      hintText: 'Input Password',
+                      fillColor: Colors.grey[200],
+                      filled: true
                   ),
                 ),
-                SizedBox(height: 32.0),
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => MyHomePage())
-                    );
+              ),
+              SizedBox(height: 25),
+
+              //signin
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 25.0),
+                child: ElevatedButton(
+                  onPressed: (){
+                    signIn();
                   },
-                  child: Text('Login'),
+                  child: Container(
+                    child: Center(
+                      child: Text(
+                          "Sign In",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 18
+                        ),
+                      ),
+                    ),
+                  ),
                 ),
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => SignUp())
-                    );
-                  },
-                  child: Text('Sign Up'),
-                ),
-              ],
-            ),
+              ),
+              SizedBox(height: 10),
+              
+              //not a member
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  GestureDetector(
+                    child: Text(
+                      "Not a Member?  ",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                  GestureDetector(
+                    onTap: widget.showRegisterPage,
+                    child: Text(
+                      'Register now',
+                      style: TextStyle(
+                        color: Colors.blue,
+                        fontWeight: FontWeight.bold
+                      ),
+                    ),
+                  )
+                ],
+              )
+
+            ],
           ),
         ),
       ),
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

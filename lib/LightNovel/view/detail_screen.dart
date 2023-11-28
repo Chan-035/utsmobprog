@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:uts/LightNovel/const/book_detail.dart';
+import 'package:uts/LightNovel/controller/book_detail.dart';
 import 'package:uts/LightNovel/model/book.dart';
 
 class Detailscreen extends StatefulWidget {

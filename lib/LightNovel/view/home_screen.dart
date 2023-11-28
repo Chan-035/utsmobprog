@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:uts/LightNovel/const/categories.dart';
+import 'package:uts/LightNovel/controller/categories.dart';
 import 'package:uts/LightNovel/model/book.dart';
-import 'package:uts/LightNovel/page/detail_screen.dart';
+import 'package:uts/LightNovel/view/detail_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({

@@ -1,11 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:uts/LoginPage/home_page.dart';
 import 'package:uts/LoginPage/login.dart';
-
+import 'package:firebase_core/firebase_core.dart';
+import 'package:uts/LoginPage/main_page.dart';
+import 'package:uts/firebase_options.dart';
 import 'visual.dart';
-import 'package:uts/LightNovel/page/home_page.dart';
+import 'package:uts/LightNovel/view/home_page.dart';
 import 'tentang.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform);
+
   runApp(MyApp());
 }
 
@@ -13,7 +20,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Login(),
+      home: MainPage(),
     );
   }
 }
@@ -49,7 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.info),
-            label: 'About Me',
+            label: 'Admin',
           ),
         ],
       ),

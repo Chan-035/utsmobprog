@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:uts/LoginPage/login.dart';
+import 'package:uts/main.dart';
 
 class SignUp extends StatelessWidget {
   @override
@@ -45,7 +46,7 @@ class SignUp extends StatelessWidget {
                   onPressed: () {
                     Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => Login())
+                        MaterialPageRoute(builder: (context) => MyHomePage())
                     );
                   },
                   child: Text('Sign Up'),

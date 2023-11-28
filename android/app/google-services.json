@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1086679444590",
+    "project_id": "fir-tuto-afed5",
+    "storage_bucket": "fir-tuto-afed5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1086679444590:android:b909c4b45c6e99e2be8a7f",
+        "android_client_info": {
+          "package_name": "com.example.flutter_application_2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCs_yaWqwLQ_zUv6JRvuDUG8kILutGExaI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1086679444590:android:f2530b941ce376b3be8a7f",
+        "android_client_info": {
+          "package_name": "com.example.uts"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCs_yaWqwLQ_zUv6JRvuDUG8kILutGExaI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
